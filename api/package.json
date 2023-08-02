@@ -1,0 +1,34 @@
+{
+  "name": "part3",
+  "version": "1.0.0",
+  "description": "'midubootcamp",
+  "mai n": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=production nodemon index.js",
+    "start:test": "cross-env NODE_ENV=test nodemon index.js",
+    "test": "cross-env NODE_ENV=test PORT=2354 jest --verbose test/user.test.js",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.5.0",
+    "nodemon": "2.0.22",
+    "supertest": "6.3.3"
+  },
+  "dependencies": {
+    "bcrypt": "5.1.0",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "16.1.3",
+    "express": "4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "7.2.1",
+    "mongoose-unique-validator": "4.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
